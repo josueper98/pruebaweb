@@ -1,0 +1,400 @@
+* {
+    padding: 0px;
+    margin: 0xp;
+    font-family: 'Playfair Display', serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #62a5a1;
+}
+
+a
+{
+    text-decoration: none;
+    font-weight: 600;
+    padding-right: 2em;
+    color: #f4efe2;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+nav a:hover
+{
+color: white;
+}
+
+header .logo{
+    width: 15em;
+    padding-left: 3em;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: inline;
+    margin:auto;
+}
+nav ul li{
+    display: inline;
+    padding: 1em;
+    margin-left: 3em;
+}
+nav ul li a{
+    color: white
+}
+
+h1 {
+    color: #62a5a1;
+}
+
+h2
+{
+   background-color: #f46024;
+   border-radius: 40px;
+   padding: 7px 16px; 
+}
+
+h3
+{
+    background-color: #f46024;
+    border-radius: 30px;
+    padding: 0,3em 1em; 
+    display: inline-block; 
+}
+p {
+    color:#62a5a1
+}
+
+.contenedor_marca {
+    display: flex;
+    align-items: center;
+}
+
+.informacion_marca {
+    padding: 2em;
+    width: 50%;
+    margin-left: 8em;
+}
+
+.icono {
+    margin-top: 2em;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    padding-left: 3em;
+}
+
+.contenedor_logotipo {
+    background-color: #f4efe2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6em;
+    padding: 30px 100px;
+}
+
+.contenedor_logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.contenedor_logos p {
+    text-align: center;
+}
+
+.contenedor_color {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.contenedor_color p {
+    text-align: center;
+}
+
+.logotipo{
+    width: 10em;
+    text-align: right;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.otros {
+    display: flex;
+    gap: 4em;
+    padding: 2em;
+}
+.otros a{
+    color: white;
+}
+.otros a:hover{
+    text-decoration: underline;
+}
+.registro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px 70px 80px;
+}
+.redes_sociales ul li{
+    display: inline;
+    justify-content: center;
+}
+.redes_sociales ul li a{
+    color: white;
+    font-size: 1em;
+    padding: 1em;
+}
+.redes_sociales ul li a:hover{
+    color:#f46024;
+}
+
+footer
+{
+    background-color:#62a5a1;
+}
+
+footer {
+    background-color: #62a5a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.redes_sociales {
+    width: 0%;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: center;
+    height: auto;
+    display: flex; 
+}
+
+.enlaces {
+    justify-content: center;
+    align-items: flex-start;
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes ul li{
+    font-size: x-large;
+    display: inline;
+    margin: 4em;
+}
+
+footer ul li {
+    margin-bottom: 2em;
+    list-style-type: none;
+}
+
+footer ul li a:hover{
+    border-bottom: 1em solid white;
+    color: white;    
+}
+
+footer ul li a{
+    color: white;
+}
+
+.logotipo{
+    margin-left: 4em;
+}
+
+/*WEB RESPONSIVE*/
+@media (min-width: 768px) and (max-width: 1024px) 
+{
+    header{
+        flex-direction: column;
+    }
+    nav {
+        padding: 0,5em;
+    }
+    h1 {
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 1em 0em;
+        flex-direction: column;
+        height: 1em;
+        padding-top: 1em;
+    }
+    p {
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 1em 0em; 
+    }
+    img{
+        width: 100%;
+        height: auto;
+        display: inline;
+        margin:auto;
+    }
+    .redes_sociales
+    {
+        width: 50%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 1em 0em; 
+ 
+    }
+
+    .icono
+    {
+        width: 50%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding-left: 0,5 em;
+        flex-direction: column; 
+    }    
+    .logo
+    {
+        font-size: 1em;
+        line-height: 2em;
+        padding: 1em;
+    }
+
+    .footer
+    {
+        font-size: 0,1em;
+        flex-direction: column;
+     }
+ 
+}
+
+@media (min-width: 481px) and (max-width: 767px)
+{
+    header{
+        flex-direction: column;
+    }
+    nav {
+        padding: 0,5em;
+    }
+    h1 {
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 1em 0em;
+        flex-direction: column;
+        height: 1em;
+        padding-top: 1em;
+    }
+    p {
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 1em 0em; 
+    }
+    img{
+        width: 100%;
+        height: auto;
+        display: inline;
+        margin:auto;
+    }
+    .redes_sociales
+    {
+        width: 50%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 1em 0em; 
+ 
+    }
+
+    .icono
+    {
+        width: 50%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding-left: 0,5 em;
+        flex-direction: column; 
+    }    
+    .logo
+    {
+        font-size: 1em;
+        line-height: 2em;
+        padding: 1em;
+    }
+
+    .footer
+    {
+        font-size: 0,1em;
+        flex-direction: column;
+     }   
+}
+
+@media (min-width: 320px) and (max-width: 480px)
+{
+    
+        header{
+            flex-direction: column;
+        }
+        nav {
+            padding: 0,2em;
+        }
+        h1 {
+            width: 70%;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 20px;
+            padding: 1em 0em;
+            flex-direction: column;
+            height: 1em;
+            padding-top: 1em;
+        }
+        p {
+            width: 50%;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 20px;
+            padding: 1em 0em; 
+        }
+        img{
+            width: 100%;
+            height: auto;
+            display: inline;
+            margin:auto;
+        }
+        .redes_sociales
+        {
+            width: 50%;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 30px;
+            padding: 1em 0em; 
+            flex-direction: column;
+     
+        }
+    
+        .icono
+        {
+            width: 50%;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 30px;
+            padding-left: 0,2 em;
+            flex-direction: column; 
+        }    
+        .logo
+        {
+            font-size: 1em;
+            line-height: 2em;
+            padding: 1em;
+        }
+    
+        .footer
+        {
+            font-size: 0,1em;
+            flex-direction: column;
+         }    
+}
+
